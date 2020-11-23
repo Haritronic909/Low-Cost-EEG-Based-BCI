@@ -93,7 +93,7 @@ class Scope(object):
             self.start()
 
     def start(self):
-        #uncoomented to work without an input
+        #uncommented to work without an input
         '''# Serial variables
         self.ser = serial.Serial(self.port, baudrate=57600, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE,
                                  bytesize=serial.EIGHTBITS)
