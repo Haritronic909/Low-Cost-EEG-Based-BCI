@@ -93,13 +93,14 @@ class Scope(object):
             self.start()
 
     def start(self):
-        # Serial variables
+        ''' # Serial variables
         self.ser = serial.Serial(self.port, baudrate=57600, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE,
                                  bytesize=serial.EIGHTBITS)
-
+        
         if not self.ser.isOpen():
             print('Failed to open port')
             return
+
 
         # Create log file
         self.filename = '/home/ronan/Documents/EEG_csv/' + time.ctime() + '.csv'
@@ -109,7 +110,7 @@ class Scope(object):
 
         if not self.logfile:
             print('Failed to open logfile')
-            return
+            return   '''
 
         # Create a timer to update graph every timeout
         self.plot_timer = QtCore.QTimer()
