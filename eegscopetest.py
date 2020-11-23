@@ -9,9 +9,7 @@
 from pyqtgraph.Qt import QtCore, QtWidgets
 import pyqtgraph as pg
 import numpy as np
-import serial
 import threading
-import time
 import sys
 
 
@@ -93,8 +91,7 @@ class Scope(object):
             self.start()
 
     def start(self):
-        #uncommented to work without an input
-        '''# Serial variables
+        ''' # Serial variables
         self.ser = serial.Serial(self.port, baudrate=57600, parity=serial.PARITY_NONE, stopbits=serial.STOPBITS_ONE,
                                  bytesize=serial.EIGHTBITS)
         
